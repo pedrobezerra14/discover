@@ -61,3 +61,8 @@ ul li a{
 
     transition: background 0.2s;
 }
+
+ul li a:hover{
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid #ffffff;
+}
