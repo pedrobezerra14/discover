@@ -77,12 +77,11 @@ body *{
     left: 0;
     z-index: 1;
     transform: translateY(-50%); 
+    animation: slide-back 0.2s;
 }
 
 .light #switch button {
-    right: 0;
-    left: initial;
-    cursor: pointer;
+    animation: slide-in 0.2s forwards;
 }
 
 #switch span{
@@ -95,8 +94,6 @@ body *{
     border-radius: 9999px;
     cursor: pointer;
 }
-
-
 
 ul{
     list-style: none;
@@ -167,3 +164,23 @@ footer{
         --bg-url: url(./assets/bg-desktop-light.jpg);
     }
  }
+
+ /* animation */
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+ }
+
+@keyframes slide-back {
+   from {
+    left: 50%;
+   }
+   to {
+    left: 0;
+   }
+}
