@@ -80,6 +80,7 @@ body *{
 .light #switch button {
     right: 0;
     left: initial;
+    cursor: pointer;
 }
 
 #switch span{
